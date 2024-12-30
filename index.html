@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js"></script>
+</head>
+<body>
+    <h1>PDF Editor</h1>
+    <div class="upload-container">
+        <input type="file" id="upload" accept="application/pdf">
+        <button id="download">Download Edited PDF</button>
+    </div>
+    <canvas id="pdf-canvas"></canvas>
+    <div class="editor-tools">
+        <label for="text">Add Text:</label>
+        <input type="text" id="text" placeholder="Enter text">
+        <label for="x">X:</label>
+        <input type="number" id="x" placeholder="X Position">
+        <label for="y">Y:</label>
+        <input type="number" id="y" placeholder="Y Position">
+        <button id="add-text">Add Text</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
