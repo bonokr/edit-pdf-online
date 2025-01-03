@@ -9,15 +9,20 @@
     <script src="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js"></script>
 </head>
 <body>
-    <h1>Edit PDF</h1>
-    <div class="container">
+    <h1>PDF Editor</h1>
+    <div class="upload-container">
         <input type="file" id="upload" accept="application/pdf">
-        <canvas id="pdf-canvas"></canvas>
-        <div class="tools">
-            <input type="text" id="text-input" placeholder="Enter text to add">
-            <button id="add-text">Add Text</button>
-            <button id="download-pdf">Download Edited PDF</button>
-        </div>
+        <button id="download">Download Edited PDF</button>
+    </div>
+    <canvas id="pdf-canvas"></canvas>
+    <div class="editor-tools">
+        <label for="text">Add Text:</label>
+        <input type="text" id="text" placeholder="Enter text">
+        <label for="x">X:</label>
+        <input type="number" id="x" placeholder="X Position">
+        <label for="y">Y:</label>
+        <input type="number" id="y" placeholder="Y Position">
+        <button id="add-text">Add Text</button>
     </div>
     <script src="script.js"></script>
 </body>
