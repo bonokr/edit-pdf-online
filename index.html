@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced PDF Editor</title>
+    <title>PDF Editor</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/@pdftron/webviewer@8.11.0/webviewer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js"></script>
 </head>
 <body>
-    <div id="viewer-container">
-        <div id="viewer"></div>
+    <h1>Edit PDF</h1>
+    <div class="container">
+        <input type="file" id="upload" accept="application/pdf">
+        <canvas id="pdf-canvas"></canvas>
+        <div class="tools">
+            <input type="text" id="text-input" placeholder="Enter text to add">
+            <button id="add-text">Add Text</button>
+            <button id="download-pdf">Download Edited PDF</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
